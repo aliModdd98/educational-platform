@@ -27,19 +27,11 @@ import { SlCalender } from 'react-icons/sl'
 import {BsFillPersonFill}from 'react-icons/bs'
 import EighthSec from '../../components/BodyPage/Eighth/EighthSec'
 import NinthSec from '../../components/BodyPage/NinthSec/NinthSec'
-import img1 from './../../assets/person3.jpeg'
-import img2 from './../../assets/person2.jpeg'
-import img3 from './../../assets/person1.jpeg'
+import currentInfoData from './../../Const/InfoTeacher.js'
 import TenthSec from '../../components/BodyPage/TenthSec/TenthSec'
 import Footer from '../../components/Footer/Footer'
-
+import pricing from './../../Const/Pricing.js'
 function HomePage() {
-
- const home=[{
-  pageName:"WATCH THE VIDEO",
-  desc:"Eduction is the mother of Leadership"
- }]
-
 
   const subList=[
     {
@@ -90,41 +82,7 @@ function HomePage() {
       more:"Learn More"
     }
     ]
-    const pricing=[
-      {
-        title:"Starter",
-        price:"$50.99",
-        paragraph:"Far far away, behind the word mountains , far from the countries Vokalia and Consonantia, there live the blind texts.",
-        button:"GET STARTED"
-      },
-      {
-        title:"Business",
-        price:"$99.99",
-        paragraph:"Far far away, behind the word mountains , far from the countries Vokalia and Consonantia, there live the blind texts.",
-        button:"GET STARTED"
-      },
-      {
-        title:"Premium",
-        price:"$199.99",
-        paragraph:"Far far away, behind the word mountains , far from the countries Vokalia and Consonantia, there live the blind texts.",
-        button:"GET STARTED"
-      }
-    ]
-const currentInfoData=[
-  {
-    image:img1,
-    name:"John Doe",
-    position:"CEO, Founder"
-  }, {
-    image:img2,
-    name:"Ruby Mar",
-    position:"Front-end Developer"
-  }, {
-    image:img3,
-    name:"Jan Kho",
-    position:"Back-end Developer"
-  },
-]
+  
 const category_list=[ {
   title:"Science",
   numOfCources:"1,391 cources",

@@ -45,8 +45,8 @@ margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin: 0 auto;
   border: 1px solid  #8992DF;
@@ -109,6 +109,10 @@ margin-bottom: 30px;
     .third-sec{
         height: 240vh;
         margin-bottom: 10%;
+    }
+    .circle{
+        width: 70px;
+        height: 70px;
     }
     .third-sec .sub-grid{
         display: grid;

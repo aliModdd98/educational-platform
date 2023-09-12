@@ -1,21 +1,14 @@
 
 import HeadPage from '../ThirdSec/HeadPage';
 import './EighthSecStyle.css'
-import { useEffect } from 'react';
-import AOS from 'aos';
+
+
 import 'aos/dist/aos.css';
+import useAOS from '../../../Hooks/UseAos';
 function EighthSec({pricing}) {
  const title="Pricing";
 
- 
- useEffect(() => {
-    AOS.init();
-  }, []);
-
-  useEffect(() => {
-    AOS.refresh();
-  });
-  
+ useAOS();
  
  return (
     <div className='eighth-sec'>
