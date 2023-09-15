@@ -104,3 +104,28 @@
           .circle:hover{
             cursor: pointer;
           }
+
+          @media (max-width:1100px) {
+            
+            .news{
+              height: 360vh;
+            }
+            
+.grid-container {
+
+  grid-template-columns: repeat(1, 1fr); 
+}
+          }
+
+          @media (max-width:560px) {
+          .news{
+            height: 410vh;
+          } 
+            .news  .new_card .grid-container .card{
+              width: 350px;
+              height:360px;
+              /* flex-direction: column; */
+            
+             
+           }
+          }
