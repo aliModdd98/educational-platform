@@ -3,30 +3,33 @@ import * as ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css'
-import HomePage from './pages/HomePage/HomePage'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { useEffect } from 'react';
-import About from './pages/About/About';
-import NewsPage from './pages/NewsPage/NewsPage';
+import LandingPage from './components/Home/LandingPage';
+import NavigateTo from './router/Navigate';
+import { Provider } from 'react-redux';
+// import Loader from './components/Loader/Loader';
+import store from './store/index'
+
+
 function App() {
   useEffect(() => {
     AOS.init({
        });
   }, []);
 
-
+  // const { isLoading, teachers, courses, students } = useDataFetching();
   return (
+ <Provider store={store}>
     <Router>
-      <Routes>
-      <Route  path="*" exact element={<HomePage />} />
-      <Route path="/about" element={<About/>} />
-      <Route path="/news" element={<NewsPage/>} />
-      </Routes>  </Router>
-   
-
-
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="*" element={<NavigateTo />} />
+        </Routes>
+  </Router>
+  </Provider>
   )}
        
 

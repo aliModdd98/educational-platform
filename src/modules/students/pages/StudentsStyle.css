@@ -1,0 +1,94 @@
+.students{
+    min-height: 110vh;
+    width: 100%;
+    position: relative;
+}
+.studentTitle{
+    height: 26%;
+    width: 80%;
+    margin: 5%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.students .student{
+    width: 90%;
+    display: grid;
+    gap: 20px;
+    height: 65%;
+    grid-template-columns: repeat(2,1fr);
+   margin: 0 auto;
+   margin-top: 5%;
+   margin-bottom: 8%;
+}
+.students .student .studentCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+    /* background: linear-gradient(145deg, #422121, #4e2828); */
+    box-shadow:  21px 21px 42px #d4d4d4,
+             -21px -21px 42px #ffffff;
+
+}
+.students .student .studentCard:hover{
+    cursor: pointer;
+    transform: scale(1);
+}
+.students .student .studentCard .studentImg{
+    height: 90%;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+.students .student .studentCard .studentImg img{
+    width:75px ;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.students .student .studentCard .infor span{
+    color: gray;
+}
+.students .student .studentCard .infor .descStudents{
+ font-size: 12px;
+}
+.students .moreS {
+   position: absolute;
+   top: 80%; 
+   border-radius: 50%;
+   width: 65px;
+   height: 65px;
+   left: 50%;
+}
+.students .moreS span{
+    margin: 0 auto;
+}
+@media (max-width: 720px) {
+     .students{
+        height: 145vh;
+     }
+    .students .student{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .studentTitle{
+        margin-bottom: 6%;
+    }
+    .students .moreS {
+        top: 94%;
+    }
+}
+@media (max-width:450px) {
+    .students{
+        height: 230vh;
+     }
+     .studentCard{
+        height: 270px;
+     }
+}

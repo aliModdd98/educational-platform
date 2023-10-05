@@ -1,0 +1,176 @@
+.containerT{
+height: 198vh;
+width: 100%;
+position: relative;
+}
+.titleTeachers{
+    width: 80%;
+    height: 30%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.titleTeachers p{
+    color: rgba(27, 25, 25, 0.427);
+}
+.containerT .teachers{
+    /* width: 100%; */
+    height: 58%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 50px;
+   }
+.teachers .card{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin: 0 auto;
+    text-align: center;
+    overflow:hidden;
+}
+
+.teachers .card .teacherImg{
+    margin: 0 auto;
+    width: 80px;
+    height:80px ;
+}
+.teachers .card .teacherImg img{
+    border-radius: 50%;
+    width: 70px;
+    height:70px ;
+   
+
+}.teachers .card .info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.teachers .card h2,
+
+.teachers .card p{
+    margin: 0 auto;
+
+}
+.teachers .card p{
+    height: 50%;
+    font-size: 15px;
+}
+.button-container{
+ position: absolute;
+ top: 89%;
+   width: auto;
+    height: auto;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+  
+}
+.button-container .more{
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    background-color: purple}
+/* }
+@media (max-width:1180px) {
+    .containerT{
+        height: 310vh;
+        }
+.containerT .teachers{
+       height: 70%;
+   grid-template-columns: repeat(2, 1fr);
+    
+   }
+   .titleTeachers{
+    height: 15%;
+   }
+   .button-container{
+    
+    top: 89%;
+     
+     
+   }
+} */
+
+@media (max-width: 1180px) {
+    .containerT{
+        height: 180vh;
+    }
+    .containerT .teachers{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 6%;
+        height: 60%;
+    }
+    .teachers .card p{
+        height: 60%;
+        font-size: 13px;
+    }
+    .button-container{   
+        top: 98%;
+         }
+         .titleTeachers{
+            height: 20%;
+           }
+
+}
+@media (max-width: 860px) {
+    .containerT{
+        height: 400vh;
+        }
+    .containerT .teachers{
+        height: 50%;
+    grid-template-columns: repeat(1, 1fr);
+     
+    }
+    .teachers .card{
+        height: 370px;
+        width: 75%;
+    }
+    .teachers .card p{
+        font-size: 15px;
+    }
+.button-container{   
+    top: 98%;
+    
+     
+   }
+}
+@media (max-width: 430px) {
+    .containerT{
+        height: 430vh;
+
+        }
+    .titleTeachers{
+        height: 12%;
+       }
+    .teachers .card{
+        height: 430px;
+        justify-content: center;
+       }
+       .titleTeachers{
+        width: 90%;
+       }
+       
+.containerT .teachers{
+    width: 85%;
+    margin: 0 auto;
+}
+.teachers .card p{
+    height: 60%;
+    font-size: 13px;
+}
+}

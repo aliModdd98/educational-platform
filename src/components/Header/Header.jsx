@@ -48,11 +48,11 @@ function Header({pageName,desc}) {
     <div className="details">
     <div className="item"> <NavLink to="/" exact activeClassName="active " className="item">Home</NavLink></div>
     <div className="item"><Dropdown open={open} setOpen={setOpen}/></div>
-    <div className="item">Our Staff</div>
+    <div className="item"><NavLink to="/teachers" activeClassName="active" className="item boxteachers">Our Staff</NavLink></div>
     <div className="item"> <NavLink to="/about" activeClassName="active" className="item">About</NavLink></div>
-    <div className="item">Gallery</div>
+    <div className="item"><NavLink to="/footer"className="item" activeClassName="active">Gallery</NavLink></div>
     <div className="item"> <NavLink to="/news" activeClassName="active" className="item">News</NavLink></div>
-    <div className="item">Contact</div>
+    <div className="item"><NavLink to="/footer" className="item" activeClassName="active">Contact</NavLink></div>
    
     </div>
     <div className="btn"><button>ENROLL NOW</button></div> 
